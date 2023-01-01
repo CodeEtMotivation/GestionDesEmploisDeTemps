@@ -1,0 +1,41 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: rgb(219,226,226);
+}
+.row{
+	margin-top: 90px;
+	background-color: #fff; 
+	border-radius: 30px;
+	box-shadow: 12px 12px 22px grey;
+}
+img{
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	height: 100%;
+}
+#img{
+	background: url('../images/img_avatar3.png')  center no-repeat;
+}
+.control{
+	width: 100px;
+}
+.btn1{
+	border:none;
+	outline: none;
+	height: 50px;
+	width: 100%;
+	background-color: #444;
+	color: #fff;
+	border-radius: 4px;
+	font-weight: bold;
+
+}
+.btn1:hover{
+	background-color: #fff;
+	border:1px solid;
+	color: #444;
+}
