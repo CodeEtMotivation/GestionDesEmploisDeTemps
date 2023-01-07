@@ -1,0 +1,378 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+   <meta name="author" content="NGAHAMI ARMEL" />
+   <meta name="description" content="GESTION DES EMPLOIS DE TEMPS" />
+   <title>TimeSoft</title>
+   <link rel="icon" type="image/x-icon" href="images/icon.PNG" />
+   <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/fonts/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/jquery-ui-1.12.1/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/jquery-ui-themes-1.12.1/themes/flick/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.min.css">
+  <!-- Bootstrap Core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="dist/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="bower_components/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" type="text/css" href="css/appstyle.css" />
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <input type="checkbox" id="nav-toggle">
+  <div class="left-side">
+    <div class="left-side-brand">
+      <h2>
+        <span class="mdi mdi-leaf"></span>
+        <span id="TimeSoft">TimeSoft</span>
+      </h2>
+    </div>
+
+    <div class="menu-bar">
+    <div class="menu">
+      <li class="search-box">
+            <i class="fas fa-search icon "></i>
+            <input type="search" name="" placeholder="search...">
+      </li>
+      <ul class="menu-links">
+        <li class="nav-link">
+          <a href="">
+            <i class="fas fa-home icon "></i>
+            <span class="text nav-text">
+              Dasboard
+            </span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="">
+            <i class="fas fa-home icon "></i>
+            <span class="text nav-text">
+              Dasboard
+            </span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="">
+            <i class="fas fa-home icon "></i>
+            <span class="text nav-text">
+              Dasboard
+            </span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="">
+            <i class="fas fa-home icon "></i>
+            <span class="text nav-text">
+              Dasboard
+            </span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="">
+            <i class="fas fa-home icon "></i>
+            <span class="text nav-text">
+              Dasboard
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="bottom-content">
+      <li class="nav-link">
+          <a href="">
+            <i class="fas fa-log-out icon "></i>
+            <span class="text nav-text">
+              Logout
+            </span>
+          </a>
+      </li>
+      <li class="mode">
+        <div class="moon-sum">
+          <i class="fas fa-moon icon moon"></i>
+          <i class="fas fa-sun icon sun"></i>
+        </div>
+        <span class="mode-text text">
+          Dark mode 
+        </span>
+        <div class="toggle-switch">
+          <span class="switch"></span>
+          
+        </div>
+      </li>
+    </div>
+  </div>
+  </div>
+
+  <div class="left-contenue">
+    <header>
+      <h2>
+        <label for="nav-toggle" id="tog" style="margin-bottom: 23px;">
+          <span class="fas fa-bars" id="bars"></span>
+        </label>
+        <span id="dashboard">Dashboard</span>
+      </h2>
+
+      <!--<div class="search-wrapper">
+        <span class="fas fa-search"></span>
+        <input type="search" placeholder="rechercher">
+      </div>-->
+
+      <div class="users-wrappers">
+        <img src="images/téléchargement.jpeg" width="40px" height="40px">
+        <div>
+          <h6 id="titre">IUEs/INSAM</h6>
+          <small>Dr.Foyet</small>
+        </div>
+      </div>
+    </header>
+    <main>
+                    <div class="sm-st clearfix" style="margin-top: 100px;">
+                        <div class="sm-st-info">
+                              <span>3200</span>
+                                    Total Tasks
+                        </div>
+                    </div>
+     <div class="col-lg-3 col-md-6 col-sm-12" style="margin-top: 20px;">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" >
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-receipt fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">01</div>
+                                    <div>Emplois de Temps</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+      </div> 
+      <div class="col-lg-3 col-md-6 col-sm-12" style="margin-top: 20px;">
+                    <div class="panel panel" style="background: #5cb85c;">
+                        <div class="panel-heading" style="background: #5cb85c;color: #fff;">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-tasks fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">01</div>
+                                    <div>Emplois de Temps</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer" style="color: #5cb85c;">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+      </div> 
+      <div class="col-lg-3 col-md-6 col-sm-12" style="margin-top: 20px;">
+                    <div class="panel panel" style="background:#d9534f;">
+                        <div class="panel-heading" style="background:#d9534f;color: #fff;">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-support fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">01</div>
+                                    <div>Emplois de Temps</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer" style="color: #d9534f;">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+      </div> 
+      <div class="col-lg-3 col-md-6 col-sm-12" style="margin-top: 20px;">
+                    <div class="panel panel-yellow" style="background: #efac4e;">
+                        <div class="panel-heading" style="background: #efac4e;color: #fff;">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">01</div>
+                                    <div>Emplois de Temps</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer" style="color: #efac4e;">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+      </div> 
+
+      
+                <section class="panel" style="height: 330px;overflow-y: auto;">  
+                  <div class="panel-head">
+                    <div class="float-left ml-3 mt-3">
+                      <h4>Liste des utilisateurs</h4>
+                    </div>
+                    <div class="float-right" style="display: none;">
+                      <span class="btn btn-success mr-1 mt-3">
+                         <i class="fas fa-plus"></i>Enregistrer
+                      </span>
+                      <span class="btn btn-primary mr-1 mt-3">
+                         <i class="fas fa-pen"></i> Modifier
+                      </span>
+                      <span class="btn btn-danger mr-1 mt-3">
+                         <i class="fas fa-trash"></i>Supprimer
+                      </span>
+                    </div>
+                  </div>
+                  <div class="panel-body table-responsive">
+                     <table class="table table-hover">
+                       <thead>
+                         <tr>
+                           <th>Nom</th>
+                           <th>Prenom</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <td>NGAHAMI</td>
+                           <td>ARMEL</td>
+                         </tr>
+                         <tr>
+                           <td>NGATCHOU</td>
+                           <td>WILFRIED</td>
+                         </tr>
+                       </tbody>
+                     </table>            
+                  </div>
+                </section>  
+                
+                  
+                    <section class="panel" style="height: 330px;overflow-y: auto;margin-left: 15px;margin-right: 15px;width: 500px;">
+                        <div>
+                          dfff
+                        </div>
+                        <div>
+                          dfff
+                        </div>
+                        <div>
+                          dfff
+                        </div>
+                        <div>
+                          dfff
+                        </div>
+                         <div>
+                          dfff
+                        </div>
+                        <div>
+                          dfff
+                        </div>
+                        <div>
+                          dfff
+                        </div>
+                        <div>
+                          dfff
+                        </div>
+                         <div>
+                          dfff
+                        </div>
+                        <div>
+                          dfff
+                        </div>
+                        <div>
+                          dfff
+                        </div>
+                        <div>
+                          dfff
+                        </div>
+                         <div>
+                          dfff
+                        </div>
+                        <div>
+                          dfff
+                        </div>
+                         <div>
+                          dfff
+                        </div>
+                        <div>
+                          dfff
+                        </div>
+                         <div>
+                          dfff
+                        </div>
+                        <div>
+                          dfff
+                        </div>
+                        
+                  </div>       
+      
+    </main>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="vendor/js/jquery.min.js"></script>
+<script type="text/javascript" src="vendor/js/popper.min.js"></script>
+<script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/fonts/js/all.js"></script>
+<script type="text/javascript" src="vendor/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="vendor/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="bower_components/raphael/raphael-min.js"></script>
+<script src="bower_components/morrisjs/morris.min.js"></script>
+<script src="js/morris-data.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="dist/js/sb-admin-2.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#example').DataTable();
+  } );
+</script>
+</body>
+</html>
